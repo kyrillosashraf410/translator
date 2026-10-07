@@ -113,7 +113,7 @@ for (let countriesCode in countries) {
 function callApi() {
   if (!fromText.value.trim()) return;
 
-  let getAPi = `https://aprri.mymemory.translated.net/get?q=${fromText.value}&langpair=${fromSelect.value}|${toSelect.value}`;
+  let getAPi = `https://api.mymemory.translated.net/get?q=${fromText.value}&langpair=${fromSelect.value}|${toSelect.value}`;
 
   fetch(getAPi)
     .then((res) => res.json())
